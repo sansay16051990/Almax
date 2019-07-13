@@ -18,11 +18,11 @@
 
 <body>
 	<!-- TOP-LINE -->
-	<div class="top-line">
+	<div class="top-line d-md-flex align-items-center d-none">
 		<div class="top-line__container container">
 			<div class="top-line__row row">
 				<div class="top-line__col col-xl-2 col-lg-2 col-md-3 col-sm-3 d-flex">
-					<a href="mailto:info@almax.group" target="_blank" class="top-line__link mail"><span
+					<a href="mailto:info@almax.group" target="_blank" class="top-line__link mail d-flex align-items-center"><span
 							class="far fa-envelope"></span>info@almax.group</a>
 				</div>
 				<div class="top-line__col col-xl-2 col-lg-2 col-md-3 col-sm-3 d-flex justify-content-center">
@@ -44,13 +44,13 @@
 		</div>
 	</div>
 	<!-- MENU-TOP -->
-	<nav class="menu-top">
+	<nav class="menu-top d-flex align-items-center">
 		<div class="menu-top__container container">
 			<div class="menu-top__row row">
-				<div class="menu-top__col col-sm-12">
+				<div class="menu-top__col d-flex align-items-center col-sm-12">
 					<div class="navbar navbar-expand-lg ">
-						<a class="menu-top__logo navbar-brand" href="#"><img class="img-responsive" src="img/logo.png"
-								alt="Almax"></a>
+						<a class="menu-top__logo navbar-brand" href="#"><img class="img-responsive" src="img/logo.png" alt="Almax"
+								title="Almax group"></a>
 						<a href="#" class="menu-top__lang">Ru</a>
 						<button class="navbar-toggler sandwich" type="button" data-toggle="collapse"
 							data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -60,7 +60,7 @@
 							<span class='sw-footer'></span>
 						</button>
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
-							<ul class="menu-top__list navbar-nav mr-auto ">
+							<ul class="menu-top__list navbar-nav mr-auto d-flex justify-content-between flex-wrap">
 								<li><a href="#" class="menu-top__link active">Главная</a></li>
 								<li><a href="#" class="menu-top__link">О компании</a></li>
 								<li><a href="#" class="menu-top__link">Услуги</a></li>
@@ -75,17 +75,37 @@
 	</nav>
 	<!-- HEADER -->
 	<header class="header">
-		<div class="header__bg"></div>
-			<div class="header__container container">
-				<div class="header__row row">
-					<div class="header__col col-12">
-						<h1 class="header__title">ПЕРЕДОВЫЕ<br>ТЕХНОЛОГИИ</h1>
-						<h2 class="header__subtitle">для обеспечения энергией</h2>
-						<a class="header__btn" href="#">Подробнее</a>
-					</div>
+		<div class="header__container container">
+			<div class="header__row row">
+				<div class="header__col col-12">
+					<h1 class="header__title" title="Передовые технологии">ПЕРЕДОВЫЕ<br>ТЕХНОЛОГИИ</h1>
+					<h2 class="header__subtitle" title="Обеспечение энергией">для обеспечения энергией</h2>
+					<a class="header__btn" title="Узнать подробнее" href="#">Подробнее</a>
 				</div>
 			</div>
+		</div>
 	</header>
+	<!-- ABOUT -->
+	<div class="about">
+		<div class="about__container container">
+			<div class="about__bg"></div>
+			<div class="about__row row">
+				<div class="about__col col-lg-6 col-md-12 text-center d-flex flex-column justify-content-center">
+					<span class="about__subtitle">добро пожаловать</span>
+					<h3 class="about__title">о компании</h3>
+				</div>
+				<div class="about__col col-lg-6 col-md-12">
+					<p class="about__text">
+							История развития нашего предприятия берет свое начало в 1995 году. В этому году было создано официальное дилерское подразделение концерна PHILIPS по направлению – электроосвещение. С данного времени компания занимается выполнением светотехнических проектов, дизайном освещения и оптовыми поставками светотехники PHILIPS. Нами был успешно внедрен ряд проектов во многих отраслях промышленности, в гражданских объектах и архитектурном освещении.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- FEATURES -->
+	<div class="features">
+		asdasdasdsa
+	</div>
 	<script src="js/scripts.min.js"></script>
 </body>
 
