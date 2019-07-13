@@ -1,4 +1,54 @@
 @import "_mixins/font-face";
 
-@include font-face("roboto-example", "../fonts/RobotoRegular/RobotoRegular");
-@include font-face("roboto-example", "../fonts/RobotoBold/RobotoBold", bold);
+@font-face { 
+  font-family: "Roboto Regular";
+  font-display: swap;
+  src: local("Roboto Regular"),
+       url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), 
+       url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face { 
+  font-family: "Roboto Medium";
+  font-display: swap;
+  src: local("Roboto Medium"),
+       url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"), 
+       url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face { 
+  font-family: "Roboto Bold";
+  font-display: swap;
+  src: local("Roboto Bold"),
+       url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), 
+       url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face { 
+  font-family: "Roboto Black";
+  font-display: swap;
+  src: local("Roboto Black"),
+       url("../fonts/RobotoBlack/RobotoBlack.woff") format("woff"), 
+       url("../fonts/RobotoBlack/RobotoBlack.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face { 
+  font-family: "EuropeExt";
+  font-display: swap;
+  src: local("EuropeExt"),
+       url("../fonts/EuropeExt/EuropeExt.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face { 
+  font-family: "EuropeExt Bold";
+  font-display: swap;
+  src: local("EuropeExt Bold"),
+       url("../fonts/EuropeExt-bold/EuropeExt-bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}

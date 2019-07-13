@@ -1,6 +1,16 @@
-$default-font: "roboto-example", sans-serif;
-$accent: orange;
-$text: #333;
+$R-Reg: "Roboto Regular", sans-serif;
+$R-Med: "Roboto Medium", sans-serif;
+$R-Bold: "Roboto Bold", sans-serif;
+$R-Black: "Roboto Black", sans-serif;
+$E-Ext: "EuropeExt", sans-serif;
+$E-Ext-Bold: "EuropeExt Bold", sans-serif;
+$orange: #ff932e;
+$violet: #42437d;
+$light-grey: #8f8f8f;
+$grey: #696969;
+$light-black: #393939;
+$white:#fff;
+$transition: all .35s ease;
 
 // Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
 $grid-gutter-width: 30px;

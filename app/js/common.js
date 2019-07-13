@@ -1,5 +1,4 @@
-$(function() {
-
-	// Custom JS
-
-});
+	//Sandwich
+	$(".sandwich").click(function() {
+		$(this).toggleClass("active");
+	});
