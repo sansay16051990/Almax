@@ -21,7 +21,6 @@ h1,h2,h3,h4,h5,h6,p,ul,li{
 body {
 	position: relative;
 	overflow-x: hidden;
-	background: #404040;
 	input, textarea {
 		outline: none;
 		&:focus:required:invalid {
@@ -104,6 +103,7 @@ a{
 	background:	$white;
 	display: flex;
 	align-items: center;
+	overflow: hidden;
 	@media screen and (max-width: 992px) {
 		padding: 19px 0;
 	}
@@ -118,6 +118,10 @@ a{
 		flex-wrap: wrap;
 		justify-content: space-between;
 		width: 100%;
+		@media screen and (max-width: 992px) {
+			text-align: center;
+			margin-top: 19px;
+		}
 	}
 	&__logo{
 		margin-right: 85px;
@@ -137,9 +141,10 @@ a{
 		position: relative;
 		padding-top: 39px;
 		@media screen and (max-width: 992px) {
+			font-size: 18px;
 			height: auto;
 			padding: 0;
-			margin: 20px 0 10px 0;
+			padding: 27px 0;
 		}
 		&::after{
 			position: absolute;
@@ -149,10 +154,20 @@ a{
 			width: 100%;
 			height: 4px;
 			transition: $transition;
-			@media screen and (max-width: 767px) {
+			@media screen and (max-width: 992px) {
 				display: none;
 			}
 		}
+		&.active{
+			color: $violet;
+			&::after{		
+				background: $orange;
+				}
+			@media screen and (max-width: 992px) {
+					background: $orange;
+					color: $white;
+				}
+			}
 		&:hover{
 			color: $violet;
 		}
@@ -255,7 +270,92 @@ a{
 	top: 0;
 	transform: rotate(180deg);
 }  
-
-
+// HEADER
+.header{
+	height: 880px;
+	color: $white;
+	position: relative;
+	overflow: hidden;
+	padding-top: 150px;
+	background-image: url(../img/header-bg.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	&__bg{
+		width: 448px;
+		height: 480px;
+		position: absolute;
+		top: -227px;
+    left: -212px;
+		opacity: 0.4;
+		background-color: #22235a;
+		transform: rotate(45deg);;
+	}
+	&__title{
+		font-size: 66px;
+		text-transform: uppercase;
+		margin-bottom: 30px;
+		font-family: $E-Ext-Bold;
+		@media screen and (max-width: 768px) {
+			font-size: 38px;
+		}
+	}
+	&__subtitle{
+		font-size: 42px;
+		margin-bottom: 40px;
+		font-family: $E-Ext;
+		@media screen and (max-width: 768px) {
+			font-size: 24px;
+		}
+	}
+	&__btn{
+		display: inline-block;
+		font-size: 16px;
+		text-transform: uppercase;
+		border: 2px solid $white;
+		font-family: $R-Reg;
+		color: inherit;
+		padding: 12px 38px;
+		border-radius: 50px;
+		&:hover{
+			background: $orange;
+			border-color: $orange;
+			color: $white;
+		}
+	}
+}
+@media screen and (max-width: 992px) {
+	.navbar-collapse{
+		margin-left: -150px;
+		margin-right: -150px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.navbar-collapse{
+		margin-left: -105px;
+		margin-right: -105px;
+	}
+}
 
 @import "media"; // Always at the end
+.Rectangle_53_copy_12 {
+  background-image: url("Rectangle 53 copy 12.png");
+  opacity: 0.102;
+  position: absolute;
+ 
+  width: 448px;
+  height: 480px;
+  z-index: 155;
+}
+.Rectangle_55 {
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(255, 255, 255);
+  background-color: rgba(202, 211, 210, 0);
+  position: absolute;
+  left: 984px;
+  top: 1039px;
+  width: 179px;
+  height: 52px;
+  z-index: 158;
+}
